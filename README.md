@@ -22,24 +22,23 @@ A FastAPI service with one endpoint, `POST /ask`. It answers questions about sup
 
 **Swagger UI (`/docs`):** a single `POST /ask` endpoint:
 
-<img src="docs/screenshots/docs-page.png" alt="Swagger UI with POST /ask and GET /health" width="700">
+<img src="docs/screenshots/Home.png" alt="Swagger UI with POST /ask and GET /health" width="700">
 
 **A question that needs both sources:** the answer combines Wikipedia (creators) and the Superhero API (powerstats), and lists both as sources:
 
-<img src="docs/screenshots/answer-both-sources.png" alt="Answer with route both and sources from Wikipedia and the Superhero API" width="700">
+<img src="docs/screenshots/chat1.png" alt="Answer with route both and sources from Wikipedia and the Superhero API" width="700">
 
 **A follow-up question:** "What are his powers?" is rewritten using the session's memory into "What are Batman's powers?":
 
-<img src="docs/screenshots/follow-up.png" alt="Follow-up question with standalone_question" width="700">
+<img src="docs/screenshots/chat2.png" alt="Follow-up question with standalone_question" width="700">
 
 **Validation:** a blank question is rejected with 422 before any LLM or API call:
 
-<img src="docs/screenshots/validation-error.png" alt="422 validation error for a blank question" width="700">
+<img src="docs/screenshots/chat3.png" alt="422 validation error for a blank question" width="700">
 
 **Tests:** 99 tests pass on a fresh clone, with no API keys needed:
 
-<img src="docs/screenshots/tests-passing.png" alt="pytest: 99 passed" width="500">
-
+<img src="docs/screenshots/pytest.png" alt="pytest: 99 passed" width="500">
 ## Setup
 
 ```bash
